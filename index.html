@@ -1009,7 +1009,7 @@ D. Nhân tế bào
     <!-- ===== PHÒNG THI TRỰC TUYẾN ===== -->
     <div id="gRoomPane" style="display:none">
       <div id="hsBar"><span>🎓 Chế độ học sinh — vào phòng thi</span><button type="button" onclick="exitStudentMode()">Thoát chế độ học sinh</button></div>
-      <div class="guidebox" id="roomGuide" style="margin-bottom:14px"><p>📌 <b>Chỉ dẫn phòng thi:</b> ① Nhập <b>bài thi</b> ở ô ngay bên dưới (hoặc bỏ qua — phòng sẽ dùng Ngân hàng câu hỏi) → ② Chỉnh luật chơi rồi bấm <b>Tạo phòng thi</b> → ③ Học sinh quét mã QR là vào thẳng phòng thi, <b>không cần đăng nhập</b> (hoặc nhập mã phòng) → ④ Thầy bấm <b>Bắt đầu thi</b> → ⑤ Xem kết quả trực tiếp ở <b>Bảng kết quả chi tiết</b> phía dưới; khi kết thúc phòng có nút tải kết quả (.csv). <span id="roomGuideFb">Phòng thi chạy qua Firebase — nếu chưa có cấu hình, thầy xem hướng dẫn 5 bước ngay bên dưới.</span></p></div>
+      <div class="guidebox" id="roomGuide" style="margin-bottom:14px"><p>📌 <b>Chỉ dẫn phòng thi:</b> ① Nhập <b>bài thi</b> ở ô ngay bên dưới (hoặc bỏ qua — phòng sẽ dùng Ngân hàng câu hỏi) → ② Chỉnh luật chơi rồi bấm <b>Tạo phòng thi</b> → ③ Học sinh quét mã QR là vào thẳng phòng thi, <b>không cần đăng nhập</b> (hoặc nhập mã phòng) → ④ Thầy bấm <b>Bắt đầu thi</b> → ⑤ Xem kết quả trực tiếp ở <b>Bảng kết quả chi tiết</b> phía dưới; khi kết thúc phòng có nút tải kết quả (.csv). <span id="roomGuideFb">Phòng thi chạy qua Firebase đã tích hợp sẵn (project edumaster-online) — cứ tạo phòng và cho học sinh quét QR là thi.</span></p></div>
       <div id="roomNoFb" class="card" style="margin-bottom:14px;display:none">
         <h3 style="margin:0 0 6px">🔥 Phòng thi trực tuyến cần Firebase (miễn phí)</h3>
         <p class="note" style="margin:0">Tính năng online đồng bộ qua <b>Firebase Realtime Database</b> bằng project Firebase của chính thầy. Cách làm (khoảng 3 phút):</p>
@@ -1446,8 +1446,8 @@ IV. Axit nucleic</textarea>
 
   <section class="page" id="sec-settings">
     <h2 class="ptitle">⚙️ Cài đặt</h2>
-    <p class="pdesc">Gemini API key và Google Client ID do chính người dùng tự nhập, không nhúng sẵn trong mã nguồn. Riêng cấu hình Firebase (thông tin kết nối công khai phía máy khách) đã được tích hợp sẵn cho phòng thi trực tuyến và cổng đăng nhập chủ sở hữu.</p>
-    <div class="guidebox"><p>📌 <b>Chỉ dẫn:</b> Tự dán Gemini API key (mỗi dòng 1 key) và Google Client ID của mình vào các ô dưới đây → bấm lưu; các thông tin này chỉ nằm trong trình duyệt này. Phòng thi trực tuyến đang tạm nghỉ (chưa có project Firebase) — khi có project Firebase mới, dán cấu hình vào ô Firebase bên dưới hoặc gửi em nhúng sẵn vào web cho mọi thiết bị dùng chung.</p></div>
+    <p class="pdesc">Gemini API key và Google Client ID do chính người dùng tự nhập, không nhúng sẵn trong mã nguồn. Riêng cấu hình Firebase (thông tin kết nối công khai phía máy khách) đã được tích hợp sẵn cho phòng thi trực tuyến.</p>
+    <div class="guidebox"><p>📌 <b>Chỉ dẫn:</b> Tự dán Gemini API key (mỗi dòng 1 key) và Google Client ID của mình vào các ô dưới đây → bấm lưu; các thông tin này chỉ nằm trong trình duyệt này. Phòng thi trực tuyến đã được nhúng sẵn cấu hình Firebase (project edumaster-online) dùng chung cho mọi thiết bị; ô Firebase bên dưới chỉ là dự phòng — cấu hình thầy dán ở đó (nếu có) được ưu tiên dùng trước cấu hình nhúng.</p></div>
 
     <div class="card" style="margin-bottom:14px">
       <h3 style="margin:0 0 4px">🤖 Gemini API key — đa key xoay vòng <span class="qc-ok" style="background:#7a5af8">Đã nối AI thật — dùng được ngay</span></h3>
@@ -1496,7 +1496,7 @@ IV. Axit nucleic</textarea>
     </div>
   </section>
 
-  <footer>EduMaster Pro — 10 trong 1 • Phiên bản v23 • Sản phẩm hỗ trợ giảng dạy của GV Hồ Tấn Khải — Trường THPT Mang Thít • Ba vai trò: Admin (mã chủ — toàn quyền) / Giáo viên (tạo mới bằng key Gemini của riêng mình) / Học sinh; Thư viện chỉ xem — không copy, không tải (muốn tải, liên hệ tác giả); Kho lưu trữ + Sổ điểm chỉ Admin mở được; Phòng thi trực tuyến tạm nghỉ.</footer>
+  <footer>EduMaster Pro — 10 trong 1 • Phiên bản v24 • Sản phẩm hỗ trợ giảng dạy của GV Hồ Tấn Khải — Trường THPT Mang Thít • Ba vai trò: Admin (mã chủ — toàn quyền) / Giáo viên (tạo mới bằng key Gemini của riêng mình) / Học sinh; Thư viện chỉ xem — không copy, không tải (muốn tải, liên hệ tác giả); Kho lưu trữ + Sổ điểm chỉ Admin mở được; Phòng thi trực tuyến đã kết nối Firebase (project edumaster-online) — học sinh quét QR là thi ngay.</footer>
 </main>
 
 <!-- ============ HỘP THOẠI NHẬP KEY NHANH ============ -->
@@ -1537,7 +1537,7 @@ IV. Axit nucleic</textarea>
     <div id="authEmgBox" style="display:none">
       <input id="emgCode" type="text" inputmode="text" autocomplete="off" placeholder="Nhập mã chủ sở hữu" maxlength="9" onkeydown="if(event.key==='Enter')emgTry()">
       <button type="button" class="btn auth-btn" style="margin:10px 0 0" onclick="emgTry()">🔓 Vào với quyền Admin</button>
-      <p class="emg-note">Mã có hiệu lực <b>72 giờ</b> trên đúng trình duyệt này (hết hạn nhập lại mã là vào tiếp). Nhập sai 5 lần sẽ khoá 5 phút. Riêng Phòng thi trực tuyến tạm nghỉ ở bản không-Google này.</p>
+      <p class="emg-note">Mã có hiệu lực <b>72 giờ</b> trên đúng trình duyệt này (hết hạn nhập lại mã là vào tiếp). Nhập sai 5 lần sẽ khoá 5 phút. Phòng thi trực tuyến chạy qua Firebase đã nhúng sẵn trong web, không cần đăng nhập Google.</p>
       <p class="note" id="emgMsg" style="margin:8px 0 0"></p>
     </div>
     <button type="button" class="btn alt auth-btn" onclick="rolePickTeacher()">🧑‍🏫 Giáo viên — vào tạo ngay</button>
@@ -5701,11 +5701,22 @@ function fbParseConfig(txt){
 
 /* ===== CẤU HÌNH FIREBASE NHÚNG SẴN — CHỖ CẮM DUY NHẤT =====
    Thầy Khải đã chốt (10/11/2026): NHÚNG SẴN cấu hình Firebase vào web để học sinh quét QR là thi ngay.
-   ✅ ĐÃ CẮM firebaseConfig thật của thầy (project edumaster-pro-36063) — đây là thông tin kết nối
-      CÔNG KHAI phía máy khách của Firebase, không phải mật khẩu hay key Gemini.
+   ✅ ĐÃ CẮM firebaseConfig của project MỚI "edumaster-online" (thầy tự tay tạo và gửi ngày
+      10/11/2026) — đây là thông tin kết nối CÔNG KHAI phía máy khách của Firebase, không phải
+      mật khẩu hay key Gemini. Cấu hình này CHỈ dùng cho Phòng thi trực tuyến (Realtime Database);
+      cổng Admin vẫn là MÃ CHỦ như bản v20–v23, KHÔNG khôi phục đăng nhập Google.
    Thứ tự ưu tiên khi kết nối: (1) config thầy dán trong mục Cài đặt (localStorage edumaster_firebase_config);
-   (2) cấu hình nhúng sẵn ở dòng dưới đây. Cả hai đều trống thì phòng thi hiện hướng dẫn 5 bước như trước. */
-var FIREBASE_EMBEDDED_CONFIG = null; /* V20: bo han Firebase/Google theo y thay — web chay doc lap, khoa bang ma khan cap; khong con cau hinh nhung, khong tai SDK Google */
+   (2) cấu hình nhúng sẵn ở dòng dưới đây. */
+var FIREBASE_EMBEDDED_CONFIG = {
+  apiKey: "AIzaSyC9FJ3oib8fXa3GkJoriESlQExzdErFC10",
+  authDomain: "edumaster-online.firebaseapp.com",
+  databaseURL: "https://edumaster-online-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "edumaster-online",
+  storageBucket: "edumaster-online.firebasestorage.app",
+  messagingSenderId: "919675671313",
+  appId: "1:919675671313:web:cafbbaf26a4d24401c72b0",
+  measurementId: "G-VYTRR69RRF"
+};
 function fbNormalizeEmbedded(){
   if (!FIREBASE_EMBEDDED_CONFIG) return null;
   try { return fbParseConfig(typeof FIREBASE_EMBEDDED_CONFIG === 'string' ? FIREBASE_EMBEDDED_CONFIG : JSON.stringify(FIREBASE_EMBEDDED_CONFIG)); } catch(e){ return null; }
